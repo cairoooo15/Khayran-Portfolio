@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khayran Yaj Tenorio | BSIT Student Portfolio</title>
+  <meta name="description" content="Portfolio of Khayran Yaj Tenorio, a third-year BS Information Technology student at Bulacan State University.">
+
+  <!-- Fonts (the CSS has fallbacks if these fail to load) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER: navigation + hero ================= -->
+  <header id="home" class="hero">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__brand" href="#home">Khayran</a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <span aria-hidden="true" id="theme-icon">&#9790;</span>
+        </button>
+        <button class="icon-btn nav__menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="hero__greeting">Hi, I'm</p>
+        <h1>Khayran Yaj Tenorio</h1>
+        <p class="hero__role">
+          <span id="typing-text" aria-live="off">BSIT student at BulSU</span><span class="cursor" aria-hidden="true"></span>
+        </p>
+        <p class="hero__lead">
+          Third-year IT student in Malolos, Bulacan. I build web systems, mobile apps, and the interfaces people actually use.
+        </p>
+        <div class="hero__buttons">
+          <a class="btn btn--gold" href="#projects">View my projects</a>
+          <a class="btn btn--ghost" href="#contact">Contact me</a>
+        </div>
+      </div>
+
+      <figure class="portrait">
+        <img src="images/Gradpic.jpg" alt="Portrait of Khayran Yaj Tenorio wearing a barong and a graduation sash" width="828" height="800">
+      </figure>
+    </div>
+
+    <div class="weave" aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <!-- ================= SECTION 1: ABOUT ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About me</h2>
+
+        <div class="about">
+          <div class="about__text">
+            <p>
+              I'm a BS Information Technology student at Bulacan State University (BulSU), College of Information and Communications Technology. I'm in my third year and expect to graduate around 2028.
+            </p>
+            <p>
+              Alongside my classes, I'm building a professional profile: taking on part-time and freelance work, shipping class and capstone projects, and helping run student events as an emcee and event coordinator.
+            </p>
+
+            <h3>Experience and activities</h3>
+            <ul class="timeline">
+              <li>
+                <strong>Pinta.Co</strong>
+                <span>Prior work experience</span>
+              </li>
+              <li>
+                <strong>Events Planning Committee, student council</strong>
+                <span>Helped plan and run student events</span>
+              </li>
+              <li>
+                <strong>Emcee and event coordinator, CICT orientations</strong>
+                <span>Hosted in Filipino and English</span>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="facts" aria-label="Quick facts">
+            <dl>
+              <div>
+                <dt>School</dt>
+                <dd>Bulacan State University, CICT</dd>
+              </div>
+              <div>
+                <dt>Program</dt>
+                <dd>BS Information Technology</dd>
+              </div>
+              <div>
+                <dt>Year level</dt>
+                <dd>Third year</dd>
+              </div>
+              <div>
+                <dt>Graduation</dt>
+                <dd>Around 2028</dd>
+              </div>
+              <div>
+                <dt>Based in</dt>
+                <dd>Malolos, Bulacan, Philippines</dd>
+              </div>
+              <div>
+                <dt>Credentials</dt>
+                <dd>Cisco Networking Academy<br>Salesforce AgentBlazer Champion (Level 1)</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: SKILLS ================= -->
+    <section id="skills" class="section section--tint">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section__intro">What I use in class projects and real builds.</p>
+
+        <div class="skills">
+          <article class="skill-group">
+            <h3>Web development</h3>
+            <ul class="chips">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>AJAX</li>
+              <li>jQuery</li>
+              <li>Bootstrap 5</li>
+              <li>Chart.js</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Mobile and cloud</h3>
+            <ul class="chips">
+              <li>Flutter</li>
+              <li>Firebase Authentication</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Design and tools</h3>
+            <ul class="chips">
+              <li>UI/UX design</li>
+              <li>Card sorting and sitemaps</li>
+              <li>Canva</li>
+              <li>Git and GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+
+          <article class="skill-group">
+            <h3>Networking and security</h3>
+            <ul class="chips">
+              <li>Cisco Networking Academy</li>
+              <li>Database backup and recovery</li>
+              <li>Database security</li>
+              <li>Password hashing (bcrypt)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 3: PROJECTS ================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section__intro">Class systems, capstone work, and mobile apps. Pick a filter to narrow the list.</p>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button type="button" class="filter" data-filter="capstone" aria-pressed="false">Capstone</button>
+        </div>
+
+        <div class="projects" id="project-grid">
+
+          <article class="project" data-category="web">
+            <h3>KaIsa voting system</h3>
+            <p class="project__status">Class project, IT 211</p>
+            <p>A web-based student government voting system. I was the primary developer: login and profile modals, bcrypt password hashing, live result charts, and automatic election status updates.</p>
+            <ul class="chips chips--small">
+              <li>PHP</li>
+              <li>MySQLi</li>
+              <li>Bootstrap 5</li>
+              <li>jQuery</li>
+              <li>Chart.js</li>
+            </ul>
+          </article>
+
+          <article class="project" data-category="web">
+            <h3>Point-of-sale system</h3>
+            <p class="project__status">First-year project</p>
+            <p>A point-of-sale system for recording sales and managing items, built with a PHP back end and AJAX so pages update without a full reload.</p>
+            <ul class="chips chips--small">
+              <li>PHP</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>AJAX</li>
+            </ul>
+          </article>
+
+          <article class="project" data-category="capstone web">
+            <h3>SAGIP</h3>
+            <p class="project__status">Capstone, in progress</p>
+            <p>Smart AI-powered Government Integrated Platform. It helps Philippine local government units coordinate disaster response: incidents, rescue, evacuation, relief distribution, and volunteers, with an interactive disaster map and AI-assisted decision support.</p>
+            <ul class="chips chips--small">
+              <li>Disaster operations</li>
+              <li>AI decision support</li>
+              <li>Interactive map</li>
+            </ul>
+          </article>
+
+          <article class="project" data-category="capstone mobile">
+            <h3>TODA Smart Booking System</h3>
+            <p class="project__status">Capstone proposal</p>
+            <p>A digital queuing platform for tricycle TODAs: a passenger app, a smart terminal kiosk, cash-only fare transparency, and a way for passengers to report complaints.</p>
+            <ul class="chips chips--small">
+              <li>Passenger app</li>
+              <li>Kiosk</li>
+              <li>Complaint reporting</li>
+            </ul>
+          </article>
+
+          <article class="project" data-category="mobile">
+            <h3>Bitalyze</h3>
+            <p class="project__status">Mobile app, UX documentation</p>
+            <p>A nutrition and fitness tracker. I worked on the hybrid card sort and the sitemap that organizes the app into five categories, from meal logging to coaching.</p>
+            <ul class="chips chips--small">
+              <li>Card sorting</li>
+              <li>Sitemap</li>
+              <li>Information architecture</li>
+            </ul>
+          </article>
+
+          <article class="project" data-category="mobile">
+            <h3>Valencia Hall scheduler</h3>
+            <p class="project__status">Class project, IT 306W</p>
+            <p>A Flutter app for scheduling the use of Valencia Hall, the university's events place.</p>
+            <ul class="chips chips--small">
+              <li>Flutter</li>
+              <li>Mobile UI</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <p class="empty" id="empty-message" hidden>No projects match this filter yet.</p>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 4: CONTACT ================= -->
+    <section id="contact" class="section section--tint">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section__intro">Open to part-time and freelance work. Send me a message and I'll reply by email.</p>
+
+        <div class="contact">
+          <form id="contact-form" class="form" novalidate>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <p class="field__error" id="name-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Your email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <p class="field__error" id="email-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <p class="field__error" id="message-error" role="alert"></p>
+            </div>
+
+            <button class="btn btn--maroon" type="submit">Send message</button>
+            <p class="form__status" id="form-status" role="status"></p>
+          </form>
+
+          <aside class="links" aria-label="Other ways to reach me">
+            <h3>Find me online</h3>
+            <ul>
+              <li><a href="https://github.com/cairoooo15" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="mailto:tenorioyaj@gmail.com">tenorioyaj@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com/in/YOUR-LINK" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+            <p class="links__note">Malolos, Bulacan, Philippines</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> Khayran Yaj Tenorio. Built with HTML, CSS, and JavaScript.</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
